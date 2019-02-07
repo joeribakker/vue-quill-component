@@ -1,6 +1,7 @@
 import buble from 'rollup-plugin-buble';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 import vue from 'rollup-plugin-vue';
 
 export default {
@@ -19,6 +20,7 @@ export default {
             compileTemplate: true,
         }),
         buble(),
+        terser(),
     ],
     external: [
         'quill',
