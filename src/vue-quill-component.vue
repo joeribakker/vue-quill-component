@@ -25,6 +25,10 @@
                 type: Array,
                 default: () => [],
             },
+            isReadOnly: {
+                type: Boolean,
+                default: false,
+            },
             modules: {
                 type: Object,
                 default: () => ({}),
@@ -35,10 +39,6 @@
             },
             placeholder: {
                 type: String,
-            },
-            isReadOnly: {
-                type: Boolean,
-                default: false,
             },
             theme: {
                 type: String,
