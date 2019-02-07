@@ -10,7 +10,7 @@ yarn add quill@1 vue-quill-component
 ```
 
 ## Usage
-Simply import the component and use it in your template, binding some `contents` to it.
+Simply import the component and use it in your template, binding some `contents` to it:
 
 ### Example
 
@@ -18,7 +18,7 @@ Simply import the component and use it in your template, binding some `contents`
 <template>
     <div>
         <h1>Editor</h1>
-        <editor v-model="contents" :formats="allowedFormats" />
+        <editor v-model="contents" />
     </div>
 </template>
 
@@ -31,12 +31,7 @@ Simply import the component and use it in your template, binding some `contents`
         },
         data() {
             return {
-                contents: {
-                    ops: [],
-                },
-                allowedFormats: [
-                    'bold',
-                ],
+                contents: { ops: [] },
             };
         },
     }
