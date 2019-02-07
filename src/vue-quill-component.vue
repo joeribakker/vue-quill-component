@@ -50,13 +50,12 @@
             }
         },
         mounted: function() {
-            this.quill = new Quill(this.$refs.quillElement, {
+            this.quill = new Quill(this.$refs.quillElement, Object.assign({}, {
                 theme: this.theme,
                 placeholder: this.placeholder,
                 formats: this.formats,
                 modules: this.modules,
-                ...this.options,
-            });
+            }, this.options));
             
             applyIsEnabledToEditor(this.quill, this.isReadOnly);
             
