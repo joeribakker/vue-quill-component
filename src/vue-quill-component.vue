@@ -74,20 +74,20 @@
             });
         },
         methods: {
-            onEditorTextChange: function(delta, oldDelta, source) {
+            onEditorTextChange: function(change, previousContents, source) {
                 this.$emit('input', this.quill.getContents());
-                this.$emit('changeContent', delta, oldDelta, this.quill.getContents(), source, this.quill);
+                this.$emit('changeContent', change, this.quill.getContents(), previousContents, source, this.quill);
             },
-            onEditorSelectionChange: function(range, oldRange, source) {
-                if (range && !oldRange) {
+            onEditorSelectionChange: function(range, previousRange, source) {
+                if (range && !previousRange) {
                     this.$emit('focus', range, source, this.quill);
                 }
                 
-                if (!range && oldRange) {
-                    this.$emit('blur', oldRange, source, this.quill);
+                if (!range && previousRange) {
+                    this.$emit('blur', previousRange, source, this.quill);
                 }
                 
-                this.$emit('changeSelection', range, oldRange, source, this.quill);
+                this.$emit('changeSelection', range, previousRange, source, this.quill);
             },
             focus: function() {
                 if (this.quill) {
