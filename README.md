@@ -1,4 +1,5 @@
 # 🖋 vue-quill-component
+This is a Vue.js component that wraps and manages an instance of [Quill](https://quilljs.com/).
 
 ## Setup
 Use `yarn` or `npm` to add the package in your project. My examples will use `yarn`.
