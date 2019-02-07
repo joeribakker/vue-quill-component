@@ -1,0 +1,28 @@
+{
+  "name": "vue-quill-component",
+  "version": "0.0.0",
+  "description": "A Vue.js component for a Quill editor",
+  "main": "dist/vue-quill-component.js",
+  "unpkg": "dist/vue-quill-component.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeribakker/vue-quill-component.git"
+  },
+  "keywords": [
+    "vue",
+    "quill",
+    "component",
+    "editor"
+  ],
+  "author": "Joeri Bakker <bakkerjoeri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joeribakker/vue-quill-component/issues"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.5.0"
+  },
+  "peerDependencies": {
+    "quill": "^1.x"
+  }
+}
