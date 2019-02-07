@@ -1,13 +1,11 @@
 # 🖋 vue-quill-component
 
-## Setup
-Use `yarn` or `npm` to add the package in your project. My examples will use `yarn`.
-
-Note that `quill` version 1.x is a peer dependency rather than a direct dependency, so don't forget to install it as well. I chose this so you have control over the version of quill you want to use, and keep control over the `Quill` class.
-
+## Install
 ```
 yarn add quill@1 vue-quill-component
 ```
+
+Note that `quill` version 1.x is a peer dependency rather than a direct dependency, so don't forget to install it as well. In making it a peer dependency, you have the choice on what version you want to use and stay in control of the Quill class.
 
 ## Usage
 Simply import the component and use it in your template, binding some `contents` to it:
