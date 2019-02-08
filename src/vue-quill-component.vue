@@ -57,7 +57,7 @@
                 modules: this.modules,
             }));
             
-            this.quill.setContents(contents);
+            this.quill.setContents(this.contents);
             
             applyIsEnabledToEditor(this.quill, this.isReadOnly);
             
