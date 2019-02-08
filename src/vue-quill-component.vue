@@ -57,6 +57,8 @@
                 modules: this.modules,
             }));
             
+            this.quill.setContents(contents);
+            
             applyIsEnabledToEditor(this.quill, this.isReadOnly);
             
             if (this.editorTabIndex !== undefined) {
