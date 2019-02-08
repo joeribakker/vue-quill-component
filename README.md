@@ -148,8 +148,10 @@ Focus on the editor.
 
 ```vue
 <template>
-    <button @click="focusOnEditor">Focus!</button>
-    <VueQuill ref="editor"/>
+    <div>
+        <button @click="focusOnEditor">Focus!</button>
+        <VueQuill ref="editor"/>
+    </div>
 </template>
 
 <script>
