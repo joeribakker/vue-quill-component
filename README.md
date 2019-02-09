@@ -11,8 +11,6 @@ Note that `quill` version 1.x is a peer dependency rather than a direct dependen
 ## Usage
 Simply import the component and use it in your template, binding some `contents` to it:
 
-### Example
-
 ```vue
 <template>
     <div>
@@ -42,7 +40,7 @@ Simply import the component and use it in your template, binding some `contents`
 </style>
 ```
 
-[Registration](https://quilljs.com/docs/api/#register) of formats and modules happens using the Quill class, which is shared between components. Make sure you register your extensions before the editor component is mounted.
+Before mounting the component, make sure you [register](https://quilljs.com/docs/api/#register) all formats and modules you want to use with Quill:
 
 ```js
 import Quill from 'quill';
